@@ -16,7 +16,8 @@
 
         <div id="bloc2">
             
-            <?php include "formulaire.html" ?>
+            <!-- <?php include "formulaire.html" ?> -->
+            <?php include "checkboxes.html" ?>
            
             
         </div>

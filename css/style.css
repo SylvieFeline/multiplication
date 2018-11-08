@@ -45,6 +45,24 @@ select{
     width: 100%;
 }
 
+#checkB{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin: 0;
+    width: 380px;
+    
+}
+.check{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: left;
+}
+p{
+    text-align: center;
+}
+
 input[type=submit]{
     background-color: darkblue;
     border: none;
