@@ -25,11 +25,11 @@ h1{
 }
 
 
-#formulaire {
+#bloc2 {
     background-color: azure;
-    width: 70%;
+    width: 80%;
     margin: 10px auto;
-    padding: 20px;
+    padding: 10px 0;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -52,3 +52,18 @@ input[type=submit]{
     margin-left: 70%;
     border-radius: 10px;
 }
+
+table{
+    display: none;
+   
+
+}
+
+#bloc3{
+    display:flex;
+    flex-direction: row;
+}
+.col{
+    margin: 10px;
+}
+
