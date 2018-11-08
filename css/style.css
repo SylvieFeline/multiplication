@@ -2,6 +2,7 @@ body{
     background-image: linear-gradient(rgb(30, 65, 180),rgb(91, 151, 241));
     display: flex;
     min-height: 100vh;
+    justify-content: center;
 }
 
 #bloc_page{
@@ -12,6 +13,7 @@ body{
     display: flex;
     flex-direction: column;
     box-shadow: 0 10px 25px rgb(4, 4, 104);
+    
 }
 
 h1{
@@ -20,22 +22,23 @@ h1{
     text-transform: uppercase;
     font-size: 2em;
     text-align: center;
-    padding-bottom: 20px;
+    padding-bottom: 50px;
     border-bottom: 10px rgb(4, 4, 104) solid;
 }
 
 
 #bloc2 {
     background-color: azure;
-    width: 80%;
-    margin: 10px auto;
-    padding: 10px 0;
+    width: 400px;
+    margin: 120px 30px;
+    padding: 20px 0;
     display: flex;
     flex-direction: column;
     align-items: center;
     border : 2px blue solid;
     box-shadow: 0 10px 25px rgb(4, 4, 104);
-
+    position: absolute;
+    
 }
 
 select{
@@ -53,10 +56,14 @@ input[type=submit]{
     border-radius: 10px;
 }
 
-table{
-    display: none;
-   
-
+#table{
+    border-top: 1px black solid;
+    margin-top: 20px;
+    
+}
+h2{
+    text-align: center;
+    color: rgb(4, 4, 104);
 }
 
 #bloc3{
