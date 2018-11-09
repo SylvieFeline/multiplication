@@ -1,10 +1,11 @@
+/* fond dégradé */
 body{
     background-image: linear-gradient(rgb(30, 65, 180),rgb(91, 151, 241));
     display: flex;
     min-height: 100vh;
     justify-content: center;
 }
-
+/* premier bloc  */
 #bloc_page{
     width: 460px;
     background-color: cornflowerblue;
@@ -15,7 +16,7 @@ body{
     box-shadow: 0 10px 25px rgb(4, 4, 104);
     
 }
-
+/* titre principal */
 h1{
     color: rgb(4, 4, 104);
     font-family: 'Franklin Gothic Medium'; 
@@ -26,7 +27,48 @@ h1{
     border-bottom: 10px rgb(4, 4, 104) solid;
 }
 
+/* menu avec differents onglets */
+#menu {
+    border: 2px solid red;
+    padding-bottom: 50px;
+}
+#onglets{
+    position: absolute;
+    border: 1px solid transparent;
+    padding :0;
+    list-style: none;
+    left: 50%;
+    margin-top: 0;
+    width: 400px;
+    /* border-bottom: 1px rgb(4, 4, 104) solid; */
+    /* padding-bottom: 10px; */
+    margin-left: -200px;
+}
+#onglets li{
+    float: left;
+    height: 20px;
+    background-color: rgb(91, 151, 241);
+    margin : 2px 2px 0 2px;
+    border : 1px solid blue;
+}
+/* #onglets li:active{ */
+.active{
+    border-bottom: 1px solid white;
+    background-color: white;
+}
+#onglets a{
+    display: block;
+    color: azure;
+    text-decoration: none;
+    padding: 3px;
+}
+#onglets a:hover{
+    background-color: aqua;
+}
 
+
+
+/* bloc formulaires et résultats */
 #bloc2 {
     background-color: azure;
     width: 400px;
@@ -40,11 +82,12 @@ h1{
     position: absolute;
     
 }
-
+/* menu deroulant */
 select{
     width: 100%;
 }
 
+/* menu avec checkboxes */
 #checkB{
     display: flex;
     flex-direction: column;
@@ -59,10 +102,13 @@ select{
     justify-content: space-between;
     text-align: left;
 }
+
+/* texte choix */
 p{
     text-align: center;
 }
 
+/* bouton envoi */
 input[type=submit]{
     background-color: darkblue;
     border: none;
@@ -74,6 +120,7 @@ input[type=submit]{
     border-radius: 10px;
 }
 
+/* style des tables */
 #table{
     border-top: 1px black solid;
     margin-top: 20px;

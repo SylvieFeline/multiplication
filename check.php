@@ -1,8 +1,4 @@
 <!DOCTYPE html>
-
-<?php require_once("./onglets.php");
-    $onglets = affiche_onglets(); ?>
-                
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
@@ -20,11 +16,8 @@
 
         <div id="bloc2">
             
-            <?php echo $onglets; ?>    
-            <!-- <?php include "onglets.php" ?> -->
-
-            <?php include "formulaire.html" ?>
-            <!-- <?php include "checkboxes.html" ?> -->
+            <!-- <?php include "formulaire.html" ?> -->
+            <?php include "checkboxes.html" ?>
            
             
         </div>

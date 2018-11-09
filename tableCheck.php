@@ -18,33 +18,37 @@
             <?php include "checkboxes.html" ?>
    
             <div id="table">
-                <h2> Voici la table de <?php echo $_GET["tables"] ?></h2>
+
+            <!-- recuperation valeurs des checkboxes cochées dans tableau -->
+             <?php
+                foreach($_GET['table'] as $valeur){             ?>
+
+                <h2> Voici la table de <?php echo $valeur ?> </h2>
                 <div id="bloc3">
                     <div class="col">
                             
                         <?php 
                             for($a=0; $a<10; $a++){
-                                echo $_GET["tables"].' x '.$a.' = '.($_GET["tables"]*$a).'<br/>';
+                                echo $valeur.' x '.$a.' = '.($valeur*$a).'<br/>';
                             }
                         ?>
                     </div>  
                     <div class="col">
                         <?php 
                             for($a=10; $a<20; $a++){
-                               echo $_GET["tables"].' x '.$a. ' = '.($_GET["tables"]*$a).'<br/>';
+                               echo $valeur.' x '.$a. ' = '.($valeur*$a).'<br/>';
                             }
                         ?>
                     </div>
                     <div class="col">
                         <?php 
                             for($a=20; $a<30; $a++){
-                                echo $_GET["tables"].' x '.$a. ' = '.($_GET["tables"]*$a).'<br/>';
+                                echo $valeur.' x '.$a. ' = '.($valeur*$a).'<br/>';
                             }
                         ?>
-                    </div>
-                        
-
+                    </div>                     
                 </div>
+             <?php   } ?>
             </div>
 
 
